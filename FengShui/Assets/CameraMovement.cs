@@ -10,7 +10,7 @@ public class CameraScript : MonoBehaviour
         
     }
 
-    public float speed = 1.0f;
+    public float speed = 2.0f;
 	private float X;
 	private float Y;
 
