@@ -37,13 +37,13 @@ public class CameraScript : MonoBehaviour
         /* up-down movements
            space bar is up
            shift key is down
-        
+        */
         if(Input.GetKey("space")){
             transform.Translate(new Vector3(0, 12f* Time.deltaTime, 0));
         }
         if(Input.GetKey(KeyCode.LeftShift)){
             transform.Translate(new Vector3(0, -12f* Time.deltaTime, 0));
         }
-        */
+        
     }
 }
