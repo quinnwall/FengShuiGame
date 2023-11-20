@@ -13,12 +13,19 @@ public class CameraScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W) == true) {
+        /*if (Input.GetKeyDown(KeyCode.W) == true) {
             gameObject.transform.position = new Vector3(1.0f, 0, 1.0f);
         }
 
         if (Input.GetKeyDown(KeyCode.S) == true) {
             gameObject.transform.position = new Vector3(-1.0f, 0, -1.0f);
         }
+        */
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
+        
+        Vector3 movement = new Vector3(horizontalInput, 0, verticalInput);
+        movement.Normalize(); //movement speed will be the same in every direction
+        transform.Translate(movement * 5.0f * Time.deltaTime);
     }
 }
