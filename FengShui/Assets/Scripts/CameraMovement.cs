@@ -10,7 +10,7 @@ public class CameraScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        speed = 20.0f;
+        speed = 15.0f;
         playerSpeed = 6.0f;
     }
 
