@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
+    public float speed;
+    public float playerSpeed;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        speed = 20.0f;
+        playerSpeed = 6.0f;
     }
 
-    public float speed = 50.0f;
-    public float playerSpeed = 30.0f;
+    
 	private float X;
 	private float Y;
 
@@ -40,10 +43,10 @@ public class CameraScript : MonoBehaviour
            shift key is down
         */
         if(Input.GetKey("space")){
-            transform.Translate(new Vector3(0, 12f* Time.deltaTime, 0));
+            transform.Translate(new Vector3(0, 5.0f* Time.deltaTime, 0));
         }
         if(Input.GetKey(KeyCode.LeftShift)){
-            transform.Translate(new Vector3(0, -12f* Time.deltaTime, 0));
+            transform.Translate(new Vector3(0, -5.0f* Time.deltaTime, 0));
         }
         
     }
