@@ -24,7 +24,7 @@ public class FurnitureScript : MonoBehaviour
         Vector3 NewWorldPosition =
             mainCamera.ScreenToWorldPoint(ScreenPosition); //Screen point converted to world point
 
-        transform.position = NewWorldPosition;
+        transform.position = new Vector3(NewWorldPosition.x, 0.0f, NewWorldPosition.z);
     }
 
 }
