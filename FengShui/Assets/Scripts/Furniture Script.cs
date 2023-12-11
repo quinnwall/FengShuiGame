@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 [RequireComponent(typeof(Collider))]
 public class FurnitureScript : MonoBehaviour
@@ -15,6 +16,12 @@ public class FurnitureScript : MonoBehaviour
             mainCamera.WorldToScreenPoint(transform.position).z; //z axis of the game object for screen view
     }
 
+    void Update()
+    {
+        
+    }
+
+
     private float counter = 0;
 
     void OnMouseDrag()
@@ -24,7 +31,12 @@ public class FurnitureScript : MonoBehaviour
         Vector3 NewWorldPosition =
             mainCamera.ScreenToWorldPoint(ScreenPosition); //Screen point converted to world point
 
-        transform.position = NewWorldPosition;
+        transform.position = new Vector3(NewWorldPosition.x, 0.0f, NewWorldPosition.z);
+
+        if (Input.GetKeyDown(KeyCode.R)){
+            transform.Rotate(new Vector3(0.0f, 90.0f, 0.0f));
+            print("R pressed");
+        }
     }
 
 }
