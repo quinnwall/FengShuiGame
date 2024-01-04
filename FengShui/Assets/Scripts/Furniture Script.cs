@@ -44,13 +44,8 @@ public class FurnitureScript : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider col){
-        transform.position = oldPosition;
+        //transform.position = oldPosition;
         print("yaya");
-    }
-
-    void OnCollisionEnter(Collision collision)
-    {
-        print("plase");
     }
 
 }
