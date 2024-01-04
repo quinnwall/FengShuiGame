@@ -9,11 +9,15 @@ public class FurnitureScript : MonoBehaviour
     private Camera mainCamera;
     private float CameraZDistance;
 
+    private Vector3 oldPosition;
+
     void Start()
     {
         mainCamera = Camera.main;
         CameraZDistance =
             mainCamera.WorldToScreenPoint(transform.position).z; //z axis of the game object for screen view
+        
+        oldPosition = transform.position;
     }
 
     void Update()
@@ -37,6 +41,16 @@ public class FurnitureScript : MonoBehaviour
             transform.Rotate(new Vector3(0.0f, 90.0f, 0.0f));
             print("R pressed");
         }
+    }
+
+    void OnTriggerEnter(Collider col){
+        transform.position = oldPosition;
+        print("yaya");
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        print("plase");
     }
 
 }
