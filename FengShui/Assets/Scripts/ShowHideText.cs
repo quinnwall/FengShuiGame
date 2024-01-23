@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ShowHideText : MonoBehaviour
 {
+    public GameObject tutorialCanvas;
     public GameObject textOne;
     public GameObject textTwo;
     public GameObject textThree;
@@ -28,8 +29,11 @@ public class ShowHideText : MonoBehaviour
     }
 
     public void onClick(){
-        //textOne.SetActive(false);
-        //textTwo.SetActive(true);
+
+        if (textNum == 7){
+            tutorialCanvas.SetActive(false);
+            textNum = 1;
+        }
 
         tutorialTexts[textNum - 1].SetActive(false);
         tutorialTexts[textNum].SetActive(true);
