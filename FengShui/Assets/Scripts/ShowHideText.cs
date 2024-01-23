@@ -6,11 +6,19 @@ public class ShowHideText : MonoBehaviour
 {
     public GameObject textOne;
     public GameObject textTwo;
+    public GameObject textThree;
+    public GameObject textFour;
+    public GameObject textFive;
+    public GameObject textSix;
+    public GameObject textSeven;
+    private int textNum;
+    private GameObject[] tutorialTexts;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        textNum = 1;
+        tutorialTexts = new GameObject[] {textOne, textTwo, textThree, textFour, textFive, textSix, textSeven};
     }
 
     // Update is called once per frame
@@ -20,7 +28,12 @@ public class ShowHideText : MonoBehaviour
     }
 
     public void onClick(){
-        textOne.SetActive(false);
-        textTwo.SetActive(true);
+        //textOne.SetActive(false);
+        //textTwo.SetActive(true);
+
+        tutorialTexts[textNum - 1].SetActive(false);
+        tutorialTexts[textNum].SetActive(true);
+        
+        textNum += 1;
     }
 }
