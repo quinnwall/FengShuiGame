@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ToggleText : MonoBehaviour
+public class ShowHideText : MonoBehaviour
 {
+    public GameObject textOne;
+    public GameObject textTwo;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +17,10 @@ public class ToggleText : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void onClick(){
+        textOne.SetActive(false);
+        textTwo.SetActive(true);
     }
 }
