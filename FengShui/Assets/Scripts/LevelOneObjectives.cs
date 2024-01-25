@@ -43,7 +43,7 @@ public class LevelOneObjectives : MonoBehaviour
         }
 
         //check chair position
-        if(DeskChair.transform.localPosition.x < 0){
+        if(DeskChair.transform.localPosition.x < 1){
             ChairXPos = true;
         }
         else{
@@ -51,7 +51,7 @@ public class LevelOneObjectives : MonoBehaviour
         }
 
         //check table position
-        if(DeskTable.transform.localPosition.x < 0){
+        if(DeskTable.transform.localPosition.x < 1){
             TableXPos = true;
         }
         else{
