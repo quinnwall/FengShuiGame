@@ -17,11 +17,12 @@ public class ObjectivesScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        objectiveText.text = objectiveText.text;
     }
     
     //
     public void completeObjective() {
-
+        objectiveText.text = objectiveText + " (Complete)";
     }
+
 }

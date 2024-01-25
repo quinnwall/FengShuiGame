@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641228, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -590,7 +590,7 @@ GameObject:
   - component: {fileID: 251650825}
   m_Layer: 5
   m_Name: Orientation Objective
-  m_TagString: Untagged
+  m_TagString: Orientation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3073,7 +3073,7 @@ GameObject:
   - component: {fileID: 1572843398}
   m_Layer: 5
   m_Name: Placement Objective
-  m_TagString: Untagged
+  m_TagString: Placement
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3291,6 +3291,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Desk Chair
       objectReference: {fileID: 0}
+    - target: {fileID: 2623063350231033741, guid: dca1c37a1175d9a43a327251d9a9c242, type: 3}
+      propertyPath: m_TagString
+      value: DeskChair
+      objectReference: {fileID: 0}
     - target: {fileID: 3399424510002052407, guid: dca1c37a1175d9a43a327251d9a9c242, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.65
@@ -3396,6 +3400,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: door_014
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 91a814555e1cd9f4d86c90bb9e4e5b78, type: 3}
+      propertyPath: m_TagString
+      value: Door
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3450,6 +3458,10 @@ PrefabInstance:
     - target: {fileID: 2799390531586674491, guid: 341a629743cc1e34b92b491ed0d15e15, type: 3}
       propertyPath: m_Name
       value: Desk Table
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799390531586674491, guid: 341a629743cc1e34b92b491ed0d15e15, type: 3}
+      propertyPath: m_TagString
+      value: DeskTable
       objectReference: {fileID: 0}
     - target: {fileID: 3283896500179998081, guid: 341a629743cc1e34b92b491ed0d15e15, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3658,6 +3670,10 @@ PrefabInstance:
     - target: {fileID: 5720475350061119321, guid: 580c56e7926cf4808a660b2b98a547ce, type: 3}
       propertyPath: m_Name
       value: Player Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 5720475350061119321, guid: 580c56e7926cf4808a660b2b98a547ce, type: 3}
+      propertyPath: m_TagString
+      value: MainCamera
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
