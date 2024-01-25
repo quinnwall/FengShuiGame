@@ -1165,8 +1165,9 @@ GameObject:
   - component: {fileID: 516647939}
   - component: {fileID: 516647938}
   - component: {fileID: 516647937}
+  - component: {fileID: 516647941}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Objectives Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1258,6 +1259,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &516647941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516647936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add76d455893941bbb6ba9dc8ba8b99c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectiveOneText: {fileID: 251650823}
+  ObjectiveTwoText: {fileID: 1572843396}
+  DeskChair: {fileID: 994821005}
+  DeskTable: {fileID: 1903502469}
+  ChairAngle: 0
+  TableAngle: 0
+  ChairXPos: 0
+  TableXPos: 0
 --- !u!4 &577340329 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 91a814555e1cd9f4d86c90bb9e4e5b78, type: 3}
@@ -2374,7 +2395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &966940793
 MonoBehaviour:
   m_ObjectHideFlags: 0
