@@ -5,7 +5,7 @@ public class NavigateMainMenu : MonoBehaviour
 {
     public void NextScene()
     {
-        SceneManager.LoadScene("Blank");
+        SceneManager.LoadScene("Game Menu");
     }
 }
     
