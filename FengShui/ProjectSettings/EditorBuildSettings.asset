@@ -14,4 +14,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Command Position/Level 2.unity
     guid: 41570e0dd714947f5859f882301b8156
+  - enabled: 1
+    path: Assets/Scenes/Command Position/Level 3.unity
+    guid: d308793244fdb4c5e97b67ac7f94d1e3
+  - enabled: 1
+    path: Assets/Scenes/Command Position/Level 4.unity
+    guid: 57e46ab1129f84c0995c59f897a74c33
+  - enabled: 1
+    path: Assets/Scenes/Command Position/Level 5.unity
+    guid: ab0f8cdd49fe74d1098c24fe2dcfabae
+  - enabled: 1
+    path: Assets/Scenes/Command Position/Level 6.unity
+    guid: d9c06efe5aa814c32bf846ad0d622457
+  - enabled: 1
+    path: Assets/Scenes/Command Position/Level 7.unity
+    guid: b707b3af7aaab49e3825e91be538bced
+  - enabled: 1
+    path: Assets/Scenes/Command Position/Level 8.unity
+    guid: 99c411e963afd47f5840f70f9852da0d
+  - enabled: 1
+    path: Assets/Scenes/Command Position/Level 9.unity
+    guid: faf6b739126e44636a88b0d02741d54d
+  - enabled: 1
+    path: Assets/Scenes/Command Position/Level 10.unity
+    guid: 8e821bc9aac0c45909f8971bee598a3f
   m_configObjects: {}
