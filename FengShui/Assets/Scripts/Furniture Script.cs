@@ -21,6 +21,10 @@ public class FurnitureScript : MonoBehaviour
         
     }
 
+    void Awake() {
+        
+    }
+
 
     private float counter = 0;
 
@@ -38,9 +42,13 @@ public class FurnitureScript : MonoBehaviour
             print("R pressed");
         }
 
-        RoomCheck.instance.OrientationCheck();
-        RoomCheck.instance.PlacementCheck();
+    
         
+    }
+    
+    void OnMouseUp() {
+        ObjectivesScript.instance.checkObjectives();
+
     }
 
 }

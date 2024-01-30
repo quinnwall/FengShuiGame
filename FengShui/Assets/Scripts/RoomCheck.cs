@@ -35,7 +35,7 @@ public class RoomCheck : MonoBehaviour
     public void OrientationCheck() {
         
         
-        ObjectivesScript.instance.completeObjective();
+        //ObjectivesScript.instance.completeObjective();
 
     }
 
@@ -45,7 +45,7 @@ public class RoomCheck : MonoBehaviour
         UnityEngine.Vector3 chairToDoor = chairPos - doorPos;
         
         if (Mathf.Atan(tableToDoor.z/tableToDoor.x) != 0 && Mathf.Atan(chairToDoor.z/tableToDoor.x) != 0) {
-            ObjectivesScript.instance.completeObjective();
+            //ObjectivesScript.instance.completeObjective();
         }
 
     }
