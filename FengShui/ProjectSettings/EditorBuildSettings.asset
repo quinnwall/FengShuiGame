@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Command Position/Level 3.unity
     guid: d308793244fdb4c5e97b67ac7f94d1e3
   - enabled: 1
-    path: Assets/Scenes/Command Position/Level 5.unity
+    path: Assets/Scenes/Command Position/Level 4.unity
     guid: 57e46ab1129f84c0995c59f897a74c33
   - enabled: 0
     path: Assets/Scenes/Command Position/Level 5.unity

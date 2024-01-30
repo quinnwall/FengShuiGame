@@ -9,9 +9,6 @@ TagManager:
   - Door
   - Orientation
   - Placement
-  - Bed
-  - Closet
-  - CoffeeTable
   layers:
   - Default
   - TransparentFX
