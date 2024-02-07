@@ -24,7 +24,7 @@ public class LevelOneObjectives : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void checkLevelOneObjectives()
     {
         //check chair orientation
         if(DeskChair.transform.localRotation.eulerAngles.y == 180){
