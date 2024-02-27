@@ -88,14 +88,12 @@ public class LevelOneObjectives : MonoBehaviour
         Points();
 
         if ((ChairAngle & TableAngle & ChairXPos & TableXPos) || (MaxScore <= 0)){
-            print('2');
             ScoreText.text = MaxScore.ToString() + " Points";
             CompletionScreen.SetActive(true);
         }
     }
 
     public void Points() {
-        print("1");
         if ((ObjectiveOneText.activeSelf == true & ObjectiveTwoText.activeSelf == false) || (ObjectiveOneText.activeSelf == false & ObjectiveTwoText.activeSelf == true)) {
             MaxScore -= 10;
         } else if (ObjectiveOneText.activeSelf == false & ObjectiveTwoText.activeSelf == false) {
