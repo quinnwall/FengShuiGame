@@ -344,7 +344,7 @@ GameObject:
   - component: {fileID: 251650826}
   - component: {fileID: 251650825}
   m_Layer: 5
-  m_Name: Orientation Objective
+  m_Name: Black Tortoise Objective
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -401,7 +401,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Desk and chair are facing door
+  m_text: Incorporate the black tortoise
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -878,6 +878,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98bb073407e034620b9012bb4e50cb37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CoffeeTable: {fileID: 1184989871}
+  ArmChairOne: {fileID: 689778368}
+  ArmChairTwo: {fileID: 596817412}
+  ArmChairThree: {fileID: 928268245}
+  ArmChairFour: {fileID: 1502010022}
+  BlackTortoiseObjectiveText: {fileID: 251650823}
+  CommandPositionObjectiveText: {fileID: 1572843396}
+  BackToSolidWall: 0
+  DiagonalToDoor: 0
+  CompletionScreen: {fileID: 1352513337}
+  ScoreText: {fileID: 0}
 --- !u!4 &577340329 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 91a814555e1cd9f4d86c90bb9e4e5b78, type: 3}
@@ -1419,11 +1430,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4021131985522899963, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_Name
-      value: armchair_020 (2)
+      value: Arm Chair 3
       objectReference: {fileID: 0}
     - target: {fileID: 4361242081423647041, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.69
+      value: -2.89
       objectReference: {fileID: 0}
     - target: {fileID: 4361242081423647041, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1431,11 +1442,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4361242081423647041, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.89
+      value: -0.67
       objectReference: {fileID: 0}
     - target: {fileID: 4361242081423647041, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4361242081423647041, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1443,7 +1454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4361242081423647041, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4361242081423647041, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_LocalRotation.z
@@ -1455,7 +1466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4361242081423647041, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4361242081423647041, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1469,6 +1480,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 928268246}
   m_SourcePrefab: {fileID: 100100000, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
+--- !u!1 &1352513337 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7244243072291787972, guid: ffa7748c38a2a40cbaa3e89f41b07038, type: 3}
+  m_PrefabInstance: {fileID: 1826820865}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1446222400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1581,7 +1597,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4713487907420809757, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
       propertyPath: numTexts
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5423288963865778363, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
       propertyPath: m_text
@@ -1606,7 +1622,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7535573650594442035, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8312971572043968956, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
       propertyPath: m_text
@@ -1803,7 +1819,7 @@ GameObject:
   - component: {fileID: 1572843399}
   - component: {fileID: 1572843398}
   m_Layer: 5
-  m_Name: Placement Objective
+  m_Name: Command Position Objective
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1860,7 +1876,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Furniture is not directly in front of the door
+  m_text: Utilize the command position
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2081,11 +2097,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4021131985522899963, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_Name
-      value: armchair_020 (1)
+      value: Arm Chair 2
       objectReference: {fileID: 0}
     - target: {fileID: 4361242081423647041, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.13
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 4361242081423647041, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2093,7 +2109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4361242081423647041, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.28
+      value: 2.29
       objectReference: {fileID: 0}
     - target: {fileID: 4361242081423647041, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2238,7 +2254,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8188668777317319533, guid: e44598c2f7e887f40b23dc41be9ec9fa, type: 3}
       propertyPath: m_Name
-      value: coffee_table_005
+      value: Coffee Table
       objectReference: {fileID: 0}
     - target: {fileID: 8856379736765798871, guid: e44598c2f7e887f40b23dc41be9ec9fa, type: 3}
       propertyPath: m_LocalScale.x
@@ -2250,7 +2266,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8856379736765798871, guid: e44598c2f7e887f40b23dc41be9ec9fa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.9196843
+      value: -1.22
       objectReference: {fileID: 0}
     - target: {fileID: 8856379736765798871, guid: e44598c2f7e887f40b23dc41be9ec9fa, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2258,7 +2274,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8856379736765798871, guid: e44598c2f7e887f40b23dc41be9ec9fa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.8565905
+      value: -1.37
       objectReference: {fileID: 0}
     - target: {fileID: 8856379736765798871, guid: e44598c2f7e887f40b23dc41be9ec9fa, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2306,11 +2322,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4021131985522899963, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_Name
-      value: armchair_020
+      value: Arm Chair 1
       objectReference: {fileID: 0}
     - target: {fileID: 4361242081423647041, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.77
+      value: 2.74
       objectReference: {fileID: 0}
     - target: {fileID: 4361242081423647041, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2318,11 +2334,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4361242081423647041, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.27
+      value: -1.63
       objectReference: {fileID: 0}
     - target: {fileID: 4361242081423647041, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4361242081423647041, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2330,7 +2346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4361242081423647041, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4361242081423647041, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_LocalRotation.z
@@ -2342,7 +2358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4361242081423647041, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4361242081423647041, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -2366,7 +2382,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4021131985522899963, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_Name
-      value: armchair_020 (3)
+      value: Arm Chair 4
       objectReference: {fileID: 0}
     - target: {fileID: 4361242081423647041, guid: f5054c2a5e66cc14196771ef4bc9aa05, type: 3}
       propertyPath: m_LocalPosition.x
