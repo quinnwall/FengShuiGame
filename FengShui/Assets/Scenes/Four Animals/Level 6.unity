@@ -1201,6 +1201,169 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: daa7a5d04ff1d48738e5d5531e1e32fd, type: 3}
+--- !u!1001 &1477890117
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 453066488352889800, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_text
+      value: 'To understand the positions of the four animals, you must imagine yourself
+        in a command position surrounded by the four animals
+
+
+        The first
+        animal is the black tortoise which is located behind you'
+      objectReference: {fileID: 0}
+    - target: {fileID: 453066488352889800, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 592002875473250526, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_text
+      value: These animals each have a set of characteristics and positions that
+        will help you design your room and optimize energy flow
+      objectReference: {fileID: 0}
+    - target: {fileID: 592002875473250526, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1749296984093557519, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_text
+      value: Level 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493524681434157866, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_text
+      value: To implement the tortoise principle, all command positions must have
+        a solid wall behind them with no windows or doors. This prevents the command
+        position from being vulnerable as they can see all entryways and windows.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493524681434157866, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4713487907420809757, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: numTexts
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5423288963865778363, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_text
+      value: Try it yourself now!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5423288963865778363, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7442642716495933225, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_text
+      value: The tortoise represents stability, strength, and support and is behind
+        you to provide security and a strong foundation in a room.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7442642716495933225, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7535573650594442035, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_Name
+      value: Tutorial Canvas Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8312971572043968956, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_text
+      value: The next set of feng shui principles you will learn are known as the
+        four celestial animals
+      objectReference: {fileID: 0}
+    - target: {fileID: 8312971572043968956, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914996768751558282, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914996768751558282, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914996768751558282, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914996768751558282, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914996768751558282, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914996768751558282, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914996768751558282, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914996768751558282, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914996768751558282, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914996768751558282, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914996768751558282, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914996768751558282, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914996768751558282, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914996768751558282, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914996768751558282, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914996768751558282, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914996768751558282, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914996768751558282, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914996768751558282, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914996768751558282, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
 --- !u!1001 &1525526288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1767,103 +1930,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 580c56e7926cf4808a660b2b98a547ce, type: 3}
---- !u!1001 &5816995841413306913
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7735294709098086229, guid: e3eabc248e4784edb852af5e55257749, type: 3}
-      propertyPath: m_Name
-      value: Tutorial Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679170480880962284, guid: e3eabc248e4784edb852af5e55257749, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679170480880962284, guid: e3eabc248e4784edb852af5e55257749, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679170480880962284, guid: e3eabc248e4784edb852af5e55257749, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679170480880962284, guid: e3eabc248e4784edb852af5e55257749, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679170480880962284, guid: e3eabc248e4784edb852af5e55257749, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679170480880962284, guid: e3eabc248e4784edb852af5e55257749, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679170480880962284, guid: e3eabc248e4784edb852af5e55257749, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679170480880962284, guid: e3eabc248e4784edb852af5e55257749, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679170480880962284, guid: e3eabc248e4784edb852af5e55257749, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679170480880962284, guid: e3eabc248e4784edb852af5e55257749, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679170480880962284, guid: e3eabc248e4784edb852af5e55257749, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679170480880962284, guid: e3eabc248e4784edb852af5e55257749, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679170480880962284, guid: e3eabc248e4784edb852af5e55257749, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679170480880962284, guid: e3eabc248e4784edb852af5e55257749, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679170480880962284, guid: e3eabc248e4784edb852af5e55257749, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679170480880962284, guid: e3eabc248e4784edb852af5e55257749, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679170480880962284, guid: e3eabc248e4784edb852af5e55257749, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679170480880962284, guid: e3eabc248e4784edb852af5e55257749, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679170480880962284, guid: e3eabc248e4784edb852af5e55257749, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679170480880962284, guid: e3eabc248e4784edb852af5e55257749, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e3eabc248e4784edb852af5e55257749, type: 3}
 --- !u!1001 &6269911514397028861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1930,8 +1996,8 @@ SceneRoots:
   - {fileID: 6269911514397028861}
   - {fileID: 516647940}
   - {fileID: 838598135}
-  - {fileID: 5816995841413306913}
   - {fileID: 1099994178}
   - {fileID: 1525526288}
   - {fileID: 1217051698}
+  - {fileID: 1477890117}
   - {fileID: 1826820865}
