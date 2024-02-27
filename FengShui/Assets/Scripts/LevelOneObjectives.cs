@@ -96,8 +96,10 @@ public class LevelOneObjectives : MonoBehaviour
     public void Points() {
         if ((ObjectiveOneText.activeSelf == true & ObjectiveTwoText.activeSelf == false) || (ObjectiveOneText.activeSelf == false & ObjectiveTwoText.activeSelf == true)) {
             MaxScore -= 10;
-        } else if (ObjectiveOneText.activeSelf == false & ObjectiveTwoText.activeSelf == false) {
+        } else if (ObjectiveOneText.activeSelf == true & ObjectiveTwoText.activeSelf == true) {
             MaxScore -= 20;
+        } else {
+        
         }
     }
 
