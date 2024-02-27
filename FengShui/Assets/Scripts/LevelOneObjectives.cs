@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LevelOneObjectives : MonoBehaviour
 {
@@ -14,6 +16,11 @@ public class LevelOneObjectives : MonoBehaviour
     public bool ChairXPos;
     public bool TableXPos;
 
+    public TMP_Text ScoreText;
+    
+    int MaxScore = 500;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +28,9 @@ public class LevelOneObjectives : MonoBehaviour
         TableAngle = false;
         ChairXPos = false;
         TableXPos = false;
+        ScoreText.text = "0 Points";
     }
+
 
     // Update is called once per frame
     public void checkLevelOneObjectives()
@@ -76,8 +85,22 @@ public class LevelOneObjectives : MonoBehaviour
             ObjectiveTwoText.SetActive(true);
         }
 
-        if (ChairAngle & TableAngle & ChairXPos & TableXPos){
+        Points();
+
+        if ((ChairAngle & TableAngle & ChairXPos & TableXPos) || (MaxScore <= 0)){
+            print('2');
+            ScoreText.text = MaxScore.ToString() + " Points";
             CompletionScreen.SetActive(true);
         }
     }
+
+    public void Points() {
+        print("1");
+        if ((ObjectiveOneText.activeSelf == true & ObjectiveTwoText.activeSelf == false) || (ObjectiveOneText.activeSelf == false & ObjectiveTwoText.activeSelf == true)) {
+            MaxScore -= 10;
+        } else if (ObjectiveOneText.activeSelf == false & ObjectiveTwoText.activeSelf == false) {
+            MaxScore -= 20;
+        }
+    }
+
 }
