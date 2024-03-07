@@ -46,10 +46,10 @@ public class LevelSixObjectives : MonoBehaviour
         }
 
         //checks if the furniture is diagonal to the door
-        if (ArmChairOne.transform.localPosition.z < 30 &
-            ArmChairTwo.transform.localPosition.x < 30 &
-            ArmChairThree.transform.localPosition.z < 30 &
-            ArmChairFour.transform.localPosition.z < 30
+        if (ArmChairOne.transform.localPosition.x < 1.5 &
+            ArmChairTwo.transform.localPosition.x < 1.5 &
+            ArmChairThree.transform.localPosition.x < 1.5 &
+            ArmChairFour.transform.localPosition.x < 1.5
             ){
                 DiagonalToDoor = true;
         }
