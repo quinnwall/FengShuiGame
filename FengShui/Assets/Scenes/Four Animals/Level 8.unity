@@ -940,9 +940,9 @@ GameObject:
   m_Component:
   - component: {fileID: 516647940}
   - component: {fileID: 516647939}
+  - component: {fileID: 516647941}
   - component: {fileID: 516647938}
   - component: {fileID: 516647937}
-  - component: {fileID: 516647941}
   m_Layer: 5
   m_Name: Objectives Canvas
   m_TagString: Untagged
@@ -979,7 +979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1045,19 +1045,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 516647936}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: add76d455893941bbb6ba9dc8ba8b99c, type: 3}
+  m_Script: {fileID: 11500000, guid: df0e0705457944ee0a6e47e4b148dd0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectiveOneText: {fileID: 251650823}
-  ObjectiveTwoText: {fileID: 1572843396}
-  DeskChair: {fileID: 0}
-  DeskTable: {fileID: 0}
-  CompletionScreen: {fileID: 0}
-  ChairAngle: 0
-  TableAngle: 0
-  ChairXPos: 0
-  TableXPos: 0
-  ScoreText: {fileID: 0}
 --- !u!1001 &543600267
 PrefabInstance:
   m_ObjectHideFlags: 0
