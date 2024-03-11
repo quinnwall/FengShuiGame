@@ -4,19 +4,21 @@ using UnityEngine;
 using TMPro;
 
 
-public class LevelSixObjectives : MonoBehaviour
+public class LevelSevenObjectives : MonoBehaviour
 {
     
-    public GameObject CoffeeTable;
-    public GameObject ArmChairOne;
-    public GameObject ArmChairTwo;
-    public GameObject ArmChairThree;
-    public GameObject ArmChairFour;
+    public GameObject Desk;
+    public GameObject Chair;
+    public GameObject BookshelfOne;
+    public GameObject BookshelfTwo;
+    public GameObject BookshelfThree;
 
     public GameObject BlackTortoiseObjectiveText;
+    public GameObject RedPheonixObjectiveText;
     public GameObject CommandPositionObjectiveText;
 
     public bool BackToSolidWall;
+    public bool OpenSpaceInFront;
     public bool DiagonalToDoor;
 
     public GameObject CompletionScreen;
@@ -28,16 +30,15 @@ public class LevelSixObjectives : MonoBehaviour
     void Start()
     {
         BackToSolidWall = false;
+        OpenSpaceInFront = false;
         DiagonalToDoor = false;
     }
 
-    public void checkLevelSixObjectives(){
+    public void checkLevelSevenObjectives(){
         
         //checks if the backs of the chairs are all facing a solid wall
-        if (ArmChairOne.transform.localRotation.eulerAngles.y != 0 &
-            ArmChairTwo.transform.localRotation.eulerAngles.y != 0 &
-            ArmChairThree.transform.localRotation.eulerAngles.y != 0 &
-            ArmChairFour.transform.localRotation.eulerAngles.y != 0
+        if (Desk.transform.localRotation.eulerAngles.y != 0 &
+            Chair.transform.localRotation.eulerAngles.y != 0 
             ){
             BackToSolidWall = true;
         }
@@ -46,10 +47,9 @@ public class LevelSixObjectives : MonoBehaviour
         }
 
         //checks if the furniture is diagonal to the door
-        if (ArmChairOne.transform.localPosition.x < 1.5 &
-            ArmChairTwo.transform.localPosition.x < 1.5 &
-            ArmChairThree.transform.localPosition.x < 1.5 &
-            ArmChairFour.transform.localPosition.x < 1.5
+        // TODO: change # values
+        if ( Desk.transform.localPosition.x < 1.5 &
+            Chair.transform.localPosition.x < 1.5
             ){
                 DiagonalToDoor = true;
         }
@@ -64,6 +64,13 @@ public class LevelSixObjectives : MonoBehaviour
             BlackTortoiseObjectiveText.SetActive(true);
         }
 
+        if (OpenSpaceInFront){
+            RedPheonixObjectiveText.SetActive(false);
+        }
+        else{
+            RedPheonixObjectiveText.SetActive(true);
+        }
+
         if (DiagonalToDoor){
             CommandPositionObjectiveText.SetActive(false);
         }
@@ -71,7 +78,7 @@ public class LevelSixObjectives : MonoBehaviour
             CommandPositionObjectiveText.SetActive(true);
         }
 
-        if (BackToSolidWall & DiagonalToDoor){
+        if (BackToSolidWall & OpenSpaceInFront & DiagonalToDoor){
             CompletionScreen.SetActive(true);
         }
     }
