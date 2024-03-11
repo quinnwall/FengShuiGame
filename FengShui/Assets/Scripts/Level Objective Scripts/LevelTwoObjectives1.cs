@@ -23,7 +23,7 @@ public class LevelTwoObjectives : MonoBehaviour
 
     public TMP_Text ScoreText;
     
-    int MaxScore = 600;
+    int MaxScore = 550;
 
 
     // Start is called before the first frame update
@@ -42,9 +42,6 @@ public class LevelTwoObjectives : MonoBehaviour
     // Update is called once per frame
     public void checkLevelTwoObjectives()
     {
-        print("Door position:" + Door.transform.localPosition.x);
-        print("Bed position:" + Bed.transform.localPosition.x);
-        print("Closet position:" + Closet.transform.localPosition.x);
         //check bed orientation
         if(Bed.transform.localRotation.eulerAngles.y == 180){
             BedAngle = true;
