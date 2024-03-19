@@ -1342,6 +1342,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tutorial Canvas Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7535573650594442035, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8312971572043968956, guid: 1ae0175141e6841a89a3aaea1e66ce6a, type: 3}
       propertyPath: m_text
       value: The last celestial animals are the green dragon which is located to

@@ -9,9 +9,6 @@ public class LevelSevenObjectives : MonoBehaviour
     
     public GameObject Desk;
     public GameObject Chair;
-    public GameObject BookshelfOne;
-    public GameObject BookshelfTwo;
-    public GameObject BookshelfThree;
 
     public GameObject BlackTortoiseObjectiveText;
     public GameObject RedPheonixObjectiveText;
@@ -19,7 +16,7 @@ public class LevelSevenObjectives : MonoBehaviour
 
     public bool BackToSolidWall;
     public bool OpenSpaceInFront;
-    public bool DiagonalToDoor;
+    public bool DeskDiagonalToDoor;
 
     public GameObject CompletionScreen;
 
@@ -31,13 +28,13 @@ public class LevelSevenObjectives : MonoBehaviour
     {
         BackToSolidWall = false;
         OpenSpaceInFront = false;
-        DiagonalToDoor = false;
+        DeskDiagonalToDoor = false;
     }
 
     public void checkLevelSevenObjectives(){
         
         //checks if the backs of the chairs are all facing a solid wall
-        if (Desk.transform.localRotation.eulerAngles.y != 0 &
+        if (Desk.transform.localRotation.eulerAngles.y != 180 &
             Chair.transform.localRotation.eulerAngles.y != 0 
             ){
             BackToSolidWall = true;
@@ -47,14 +44,38 @@ public class LevelSevenObjectives : MonoBehaviour
         }
 
         //checks if the furniture is diagonal to the door
-        // TODO: change # values
-        if ( Desk.transform.localPosition.x < 1.5 &
-            Chair.transform.localPosition.x < 1.5
+        if ( Desk.transform.localPosition.x < -0.5 &
+            Chair.transform.localPosition.x < 0
             ){
-                DiagonalToDoor = true;
+                DeskDiagonalToDoor = true;
         }
         else{
-            DiagonalToDoor = false;
+            DeskDiagonalToDoor = false;
+        }
+
+        //checks if there is open space in front of the desk
+        if (Desk.transform.localRotation.eulerAngles.y == 0){
+            if(Desk.transform.localPosition.z >= -3){
+                OpenSpaceInFront = true;
+            }
+        }
+        else if (Desk.transform.localRotation.eulerAngles.y == 90){
+            if(Desk.transform.localPosition.x <= 2.5){
+                OpenSpaceInFront = true;
+            }
+        }
+        else if (Desk.transform.localRotation.eulerAngles.y == 180){
+            if(Desk.transform.localPosition.z <= 0){
+                OpenSpaceInFront = true;
+            }
+        }
+        else if (Desk.transform.localRotation.eulerAngles.y == 270){
+            if(Desk.transform.localPosition.x >= -2.5){
+                OpenSpaceInFront = true;
+            }
+        }
+        else{
+            OpenSpaceInFront = false;
         }
 
         if (BackToSolidWall){
@@ -71,14 +92,14 @@ public class LevelSevenObjectives : MonoBehaviour
             RedPheonixObjectiveText.SetActive(true);
         }
 
-        if (DiagonalToDoor){
+        if (DeskDiagonalToDoor){
             CommandPositionObjectiveText.SetActive(false);
         }
         else {
             CommandPositionObjectiveText.SetActive(true);
         }
 
-        if (BackToSolidWall & OpenSpaceInFront & DiagonalToDoor){
+        if (BackToSolidWall & OpenSpaceInFront & DeskDiagonalToDoor){
             CompletionScreen.SetActive(true);
         }
     }
