@@ -40,6 +40,8 @@ public class LevelNineObjectives : MonoBehaviour
 
     public void checkLevelNineObjectives(){
         
+        GameObject[] Bookshelves = {BookshelfOne, BookshelfTwo, BookshelfThree};
+
          //checks if the backs of the chairs are all facing a solid wall
         if (Desk.transform.localRotation.eulerAngles.y != 180 &
             Chair.transform.localRotation.eulerAngles.y != 0 
@@ -85,6 +87,58 @@ public class LevelNineObjectives : MonoBehaviour
             OpenSpaceInFront = false;
         }
 
+        //checks if the primary energy source (the windows) is to the left
+        if (Desk.transform.localRotation.eulerAngles.y == 0){
+            EnergySourceToLeft = true;
+        }
+        else{
+            EnergySourceToLeft = false;
+        }
+
+        //checks if the energy collectors (bookshelves) are to the right
+         if (Desk.transform.localRotation.eulerAngles.y == 0){
+            BookshelvesToRight = true; 
+
+            foreach (GameObject shelf in Bookshelves){
+                if (!(shelf.transform.localPosition.x <= Desk.transform.localPosition.x)){
+                    BookshelvesToRight = false;
+                }
+            }
+        }
+        else if (Desk.transform.localRotation.eulerAngles.y == 90){
+            BookshelvesToRight = true; 
+            
+            foreach (GameObject shelf in Bookshelves){
+                if (!(shelf.transform.localPosition.z <= Desk.transform.localPosition.z)){
+                    BookshelvesToRight = false;
+                }
+            }
+        }
+        else if (Desk.transform.localRotation.eulerAngles.y == 180){
+            BookshelvesToRight = true; 
+            
+            foreach (GameObject shelf in Bookshelves){
+                if (!(shelf.transform.localPosition.x >= Desk.transform.localPosition.x)){
+                    BookshelvesToRight = false;
+                }
+            }
+        }
+        else if (Desk.transform.localRotation.eulerAngles.y == 270){
+            BookshelvesToRight = true; 
+            
+            foreach (GameObject shelf in Bookshelves){
+                if (!(shelf.transform.localPosition.z >= Desk.transform.localPosition.z)){
+                    BookshelvesToRight = false;
+                }
+            }
+        }
+        else{
+            OpenSpaceInFront = false;
+        }
+
+
+
+
         if (BackToSolidWall){
             BlackTortoiseObjectiveText.SetActive(false);
         }
@@ -97,6 +151,20 @@ public class LevelNineObjectives : MonoBehaviour
         }
         else{
             RedPheonixObjectiveText.SetActive(true);
+        }
+
+        if (EnergySourceToLeft){
+            GreenDragonObjective.SetActive(true);
+        }
+        else{
+            GreenDragonObjective.SetActive(false);
+        }
+
+        if (BookshelvesToRight){
+            WhiteTigerObjective.SetActive(true);
+        }
+        else{
+            WhiteTigerObjective.SetActive(false);
         }
 
         if (DeskDiagonalToDoor){
