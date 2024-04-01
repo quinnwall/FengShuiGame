@@ -44,8 +44,14 @@ public class LevelThreeObjectives : MonoBehaviour
 
 
     // Update is called once per frame
-    public void checkLevelTwoObjectives()
+    public void checkLevelThreeObjectives()
     {
+        print("1: " + KitchenItem1.transform.localPosition.x);
+        print("2: " + KitchenItem2.transform.localPosition.x);
+        print("3: " + KitchenItem3.transform.localPosition.x);
+        print("4: " + KitchenItem4.transform.localPosition.x);
+        print("door: " + Door.transform.localPosition.x);
+
         //check bed orientation
         if(KitchenItem1.transform.localRotation.eulerAngles.y == 180){
             KitchenItem1Angle = true;
@@ -63,14 +69,14 @@ public class LevelThreeObjectives : MonoBehaviour
         }
 
         //closet table orientation
-        if(KitchenItem3.transform.localRotation.eulerAngles.y == 180 | KitchenItem3.transform.localRotation.eulerAngles.y == 0){
+        if(KitchenItem3.transform.localRotation.eulerAngles.y == 180){
             KitchenItem3Angle = true;
         }
         else{
             KitchenItem3Angle = false;
         }
 
-        if(KitchenItem4.transform.localRotation.eulerAngles.y == 180 | KitchenItem4.transform.localRotation.eulerAngles.y == 0){
+        if(KitchenItem4.transform.localRotation.eulerAngles.y == 180){
             KitchenItem4Angle = true;
         }
         else{
